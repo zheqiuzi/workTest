@@ -1,0 +1,22 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery.min.js"></script>
+</head>
+<body>
+
+<script>
+    var xhr=$.ajax({
+        url:"myController",
+        success:function(data){
+            console.log("data:"+data);
+        }
+    })
+    xhr.abort();
+    var a=new XMLHttpRequest();
+    a.abort();
+</script>
+
+</body>
+</html>
